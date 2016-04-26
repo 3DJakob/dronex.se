@@ -45,7 +45,6 @@ nav div {
 
 nav div:hover {
   background-color: rgb(19, 22, 22);;
-  -webkit-transition: 0.5s; /* Safari */
   transition: 0.5s;
 }
 
@@ -55,7 +54,7 @@ nav div a {
 
 nav div:hover a {
   color: #eee;
-  -webkit-transition: 1s; /* Safari */
+
   transition: 1s;
 }
 
@@ -71,6 +70,10 @@ div.container div.msgbox {
   background-color: rgba(0, 0, 0, 0.5);
   width: 600px;
   border-radius: 5px;
+}
+
+div.container div.msgbox p {
+  text-align: center;
 }
 
 div.msgbox div.btncontainer {
@@ -91,6 +94,5 @@ div.msgbox div.btncontainer {
 
 .btncontainer a:hover {
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-transition: 0.3s; /* Safari */
   transition: 0.3s;
 }
