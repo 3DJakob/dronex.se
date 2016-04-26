@@ -1,0 +1,8 @@
+{
+  "name": "dronex",
+  "version": "0.0.1",
+  "description": "dronex main website",
+  "dependencies": {
+    "express": "^4.10.2"
+  }
+}

@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-image: url(/img/dronexblackwide.jpg);
+  background-size: 100%;
+}
+
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  margin: 0;
+  background-color: #fff;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50px;
+}
+
+nav div:hover {
+  background-color: rgb(19, 22, 22);;
+  -webkit-transition: 0.5s; /* Safari */
+  transition: 0.5s;
+}
+
+nav div a {
+ font-family: sans-serif;
+}
+
+nav div:hover a {
+  color: #eee;
+  -webkit-transition: 1s; /* Safari */
+  transition: 1s;
+}
