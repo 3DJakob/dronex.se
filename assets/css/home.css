@@ -30,32 +30,24 @@ nav {
   justify-content: center;
   flex-direction: row;
   height: 50px;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   background-color: #fff;
 }
 
-nav div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  width: 50px;
-}
-
-nav div:hover {
-  background-color: rgb(19, 22, 22);;
-  transition: 0.5s;
-}
-
-nav div a {
+nav a {
  font-family: sans-serif;
+ width: 120px;
+ text-align: center;
+ line-height: 50px;
+ text-decoration: none;
+ color: #000;
 }
 
-nav div:hover a {
+nav a:hover {
   color: #eee;
-
-  transition: 1s;
+  background-color: rgb(19, 22, 22);
+  transition: 0.5s;
 }
 
 div.container {
