@@ -1,21 +1,18 @@
-body {
-  margin: 0;
-  background-image: url(/img/mossytilt.JPG);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 div.page_home {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
   height: 100%;
+
+  background-image: url(/img/mossytilt.JPG);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page_home div.msgbox {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 600px;
   border-radius: 5px;
   border-style: solid;

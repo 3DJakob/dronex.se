@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 h1 {
   font-family: sans-serif;
   color: #fff;
@@ -13,4 +17,5 @@ p {
 
 a {
   font-family: sans-serif;
+  text-decoration: none;
 }

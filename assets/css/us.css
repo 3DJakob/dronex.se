@@ -1,0 +1,59 @@
+div.page_us {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  background-image: url(/img/dronexblackwide.JPG);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page_us div.personbox {
+  display: flex;
+  width: 40vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page_us div.personbox div {
+  flex: 1;
+}
+
+.page_us img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  margin: 20;
+}
+
+.page_us h1 {
+
+}
+
+.page_us div.personbox p {
+  text-align: center;
+}
+
+.page_us a {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #fff;
+  margin-top: 50px;
+  padding: 20px 40px;
+  color: #fff;
+}
