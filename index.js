@@ -1,14 +1,20 @@
 var express = require('express')
+var ejs = require('ejs')
+var path = require('path')
 var app = require('express')()
-var http = require('http').Server(app)
+
+app.set('views', path.join(__dirname, 'views'));
+app.engine('ejs', ejs.renderFile);
 
 app.use('/css', express.static('assets/css'))
 app.use('/img', express.static('assets/img'))
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html')
+  res.render('page_home.ejs', {
+    page: 'home'
+  })
 })
 
-http.listen(3200, function () {
+app.listen(3200, function () {
   console.log('listening on *:3200')
 })
