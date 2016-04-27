@@ -6,51 +6,7 @@ body {
   background-position: center;
 }
 
-h1 {
-  font-family: sans-serif;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
-p {
-  font-family: sans-serif;
-  color: #fff;
-  padding: 20px;
-}
-
-a {
-  font-family: sans-serif;
-}
-
-nav {
-  position: absolute;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  flex-direction: row;
-  height: 50px;
-  width: 100vw;
-  margin: 0;
-  background-color: #fff;
-}
-
-nav a {
- font-family: sans-serif;
- width: 120px;
- text-align: center;
- line-height: 50px;
- text-decoration: none;
- color: #000;
-}
-
-nav a:hover {
-  color: #eee;
-  background-color: rgb(19, 22, 22);
-  transition: 0.5s;
-}
-
-div.container {
+div.page_home {
   display: flex;
   flex: 1;
   align-items: center;
@@ -58,7 +14,7 @@ div.container {
   height: 100%;
 }
 
-div.container div.msgbox {
+.page_home div.msgbox {
   background-color: rgba(0, 0, 0, 0.1);
   width: 600px;
   border-radius: 5px;
@@ -67,7 +23,7 @@ div.container div.msgbox {
   border-color: #fff;
 }
 
-div.container div.msgbox p {
+.page_home div.msgbox p {
   text-align: center;
 }
 
@@ -76,7 +32,7 @@ div.msgbox div.btncontainer {
   justify-content: space-around;
 }
 
-.btncontainer a {
+.page_home .btncontainer a {
   width: 200px;
   height: 50;
   background-color: rgba(255, 255, 255, 0.3);
@@ -90,7 +46,7 @@ div.msgbox div.btncontainer {
   border-color: #fff;
 }
 
-.btncontainer a:hover {
+.page_home .btncontainer a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   transition: 0.3s;
 }

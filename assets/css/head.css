@@ -1,0 +1,26 @@
+nav {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: row;
+  height: 50px;
+  width: 100vw;
+  margin: 0;
+  background-color: #fff;
+}
+
+nav a {
+ font-family: sans-serif;
+ width: 120px;
+ text-align: center;
+ line-height: 50px;
+ text-decoration: none;
+ color: #000;
+}
+
+nav a:hover {
+  color: #eee;
+  background-color: rgb(19, 22, 22);
+  transition: 0.5s;
+}
