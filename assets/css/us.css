@@ -7,7 +7,7 @@ div.page_us {
   min-height: 100vh;
 
   background-image: url(/assets/img/dronexblackwide.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }

@@ -6,7 +6,7 @@ div.page_home {
   min-height: 100vh;
 
   background-image: url(/assets/img/flying.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
