@@ -5,14 +5,14 @@ div.page_home {
   justify-content: center;
   height: 100%;
 
-  background-image: url(/img/flying.JPG);
+  background-image: url(/assets/img/flying.JPG);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.page_home:nth-child(2) {
-  background-image: url(/img/mossytilt.JPG)
+  background-image: url(/assets/img/mossytilt.JPG)
 }
 
 .page_home div.msgbox {
