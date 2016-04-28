@@ -4,9 +4,9 @@ div.page_us {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 
-  background-image: url(/img/dronexblackwide.JPG);
+  background-image: url(/assets/img/dronexblackwide.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
