@@ -15,7 +15,7 @@ div.page_us {
 .page_us div.personbox {
   display: flex;
   width: 40vw;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
@@ -48,7 +48,7 @@ div.page_us {
 }
 
 .page_us a {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
@@ -56,4 +56,10 @@ div.page_us {
   margin-top: 50px;
   padding: 20px 40px;
   color: #fff;
+}
+
+.page_us a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s;
 }
