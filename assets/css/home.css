@@ -12,7 +12,7 @@ div.page_home {
 }
 
 div.page_home:nth-child(2) {
-  background-image: url(/assets/img/mossytilt.JPG)
+  background-image: url(/assets/img/mossytilt.jpg);
 }
 
 .page_home div.msgbox {
@@ -54,8 +54,4 @@ div.msgbox div.btncontainer {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   transition: 0.3s;
-}
-
-.page_home iframe {
-  opacity: 0.8;
 }
