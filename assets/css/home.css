@@ -47,10 +47,16 @@ div.msgbox div.btncontainer {
   padding: 20px 40px;
   color: #fff;
   margin: 20px;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .page_home .btncontainer a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
   transition: 0.3s;
+}
+
+.page_home iframe {
+  opacity: 0.5;
 }
