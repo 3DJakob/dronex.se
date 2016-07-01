@@ -46,7 +46,6 @@ div.msgbox div.btncontainer {
   border-color: #fff;
   padding: 20px 40px;
   color: #fff;
-  margin: 20px;
   margin: 20px 0;
   text-align: center;
 }
@@ -58,5 +57,5 @@ div.msgbox div.btncontainer {
 }
 
 .page_home iframe {
-  opacity: 0.5;
+  opacity: 0.8;
 }
