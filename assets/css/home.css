@@ -6,14 +6,13 @@ div.page_home {
   justify-content: center;
   min-height: 100vh;
 
-  background-image: url(../img/flying.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 div.page_home:nth-child(2) {
-  background-image: url(../img/mossytilt.jpg);
+  background-image: url(/assets/img/mossytilt.jpg);
 }
 
 div.page_home:nth-child(3) {
