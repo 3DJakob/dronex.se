@@ -32,3 +32,10 @@ a {
     -webkit-transform: translateY(0px);
   }
 }
+
+img.down {
+  width: 50px;
+  position: relative;
+  margin: 0 auto;
+  bottom: 10px;
+}
