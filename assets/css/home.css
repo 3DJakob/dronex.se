@@ -27,7 +27,10 @@ div.page_home:nth-child(3) {
   border-style: solid;
   border-width: 2px;
   border-color: #fff;
-  margin: 60px 0;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   animation-name: fade;
   animation-duration: 1s;
@@ -51,7 +54,7 @@ div.msgbox div.btncontainer {
   border-color: #fff;
   padding: 20px 40px;
   color: #fff;
-  margin: 20px 0;
+  margin: 20px;
   text-align: center;
 }
 
@@ -93,7 +96,26 @@ div.page_home:nth-child(3) div {
 }
 
 .page_home .icon {
-  width: 200px;
+  width: 100px;
   margin: 20px;
   align-self: center;
+}
+
+@media (max-width: 600px) {
+  div.page_home {
+
+  }
+
+  .page_home div.msgbox {
+    height: calc(~"100vh - 150px");
+    width: 100vw;
+    margin: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  div.msgbox div.btncontainer {
+    flex-direction: column;
+  }
+
 }

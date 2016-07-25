@@ -24,3 +24,14 @@ nav a:hover {
   background-color: rgb(19, 22, 22);
   transition: 0.5s;
 }
+
+@media (max-width: 600px) {
+  nav a {
+    font-size: 14pt;
+  }
+
+  nav a {
+    width: auto;
+    flex: 1;
+  }
+}

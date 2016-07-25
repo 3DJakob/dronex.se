@@ -33,9 +33,15 @@ a {
   }
 }
 
+a.one {
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+}
+
 img.down {
   width: 50px;
+  display: block;
   position: relative;
   margin: 0 auto;
-  bottom: 10px;
 }
