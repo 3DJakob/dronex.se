@@ -34,8 +34,8 @@ a {
 }
 
 a.one {
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  top: 3px;
   width: 100vw;
 }
 

@@ -11,6 +11,10 @@ div.page_home {
   background-position: center;
 }
 
+div.page_home:first-of-type {
+  min-height: calc(100vh - 50px);
+}
+
 div.page_home:nth-child(2) {
   background-image: url(../img/mossytilt.jpg);
 }
@@ -23,6 +27,7 @@ div.page_home:nth-child(3) {
 .page_home div.msgbox {
   background-color: rgba(0, 0, 0, 0.5);
   width: 600px;
+  padding: 0;
   border-radius: 5px;
   border-style: solid;
   border-width: 2px;
@@ -84,9 +89,9 @@ div.page_home:nth-child(3) div {
   align-self: center;
 }
 
-.page_home div.container div h1 {
-  text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+.page_home div.container div h2 {
   margin: 0;
+  padding: 20px 20px 0 20px;
 }
 
 .page_home div.container div p {
@@ -103,11 +108,11 @@ div.page_home:nth-child(3) div {
 
 @media (max-width: 600px) {
   div.page_home {
-
+    background-color: rgba(0, 0, 0, 0.4);;
+    background-blend-mode: multiply;
   }
 
   .page_home div.msgbox {
-    height: calc(~"100vh - 150px");
     width: 100vw;
     margin: 0;
     border: none;
@@ -117,5 +122,18 @@ div.page_home:nth-child(3) div {
   div.msgbox div.btncontainer {
     flex-direction: column;
   }
+
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .page_home .btncontainer a {
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+      transition: 0.3s;
+    }
 
 }
