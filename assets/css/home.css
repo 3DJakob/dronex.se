@@ -108,7 +108,7 @@ div.page_home:nth-child(3) div {
 
 @media (max-width: 600px) {
   div.page_home {
-    background-color: rgba(0, 0, 0, 0.4);;
+    background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply;
   }
 

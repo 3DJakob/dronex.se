@@ -1,5 +1,6 @@
 <head>
   <meta charset="utf-8" />
+  <meta name=viewport content="width=device-width, initial-scale=1">
   <title>DroneX</title>
   <link rel="stylesheet" type="text/css" href="assets/css/head.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
@@ -14,16 +15,124 @@
       <a href="/quads">Quads</a>
       <a href="/oss">Oss</a>
   </nav>
-  <div class="page_home">
-    <div class="msgbox" id="echine">
-      <h1> AXIS </h1>
-      <h3> 12A Eachine 2300kv 3s </h3>
-      <p>
-        Vår Eachine 12A setup är ett perfekt val för dig som söker grym prestanda på en budget.
-      </p>
+  <div class="page_quads">
+
+    <div class="slider">
+      <div data-quad="axis" class="active"></div>
+      <div data-quad="target"></div>
+      <div data-quad="noname"></div>
     </div>
-    <a class="one" href="#two">
-      <img src="assets/img/icons/down-arrow.svg" class="down" />
-    </a>
+
+    <div id="quad-axis" class="quad-container active">
+      <div class="spanContent">
+        <div class="description">
+          <h1> AXIS </h1>
+          <h3> 12A Eachine 2300kv 3s </h3>
+          <p>
+            Vår Eachine 12A setup är ett perfekt val för dig som söker grym prestanda på en budget.
+          </p>
+        </div>
+        <table>
+          <tr>
+            <td>Motors</td>
+            <td>Eachine 2300kv</td>
+          </tr>
+          <tr>
+            <td>ESCs</td>
+            <td>12A Simonk</td>
+          </tr>
+          <tr>
+            <td>Flight Controller</td>
+            <td>CC3D</td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>Graphene 1500mah 3s</td>
+          </tr>
+          <tr>
+            <td>Props</td>
+            <td>Recommended 6 inch</td>
+          </tr>
+          <tr>
+            <td>Frame</td>
+            <td>Diatone 250</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="quad-target" class="quad-container">
+      <div class="spanContent">
+        <div class="description">
+          <h1> TARGET </h1>
+          <h3> 30A Emax 2300kv 4s </h3>
+          <p>
+            Vår Eachine 30A setup är ett perfekt val för dig som söker den ultimata prestandan.
+          </p>
+        </div>
+        <table>
+          <tr>
+            <td>Motors</td>
+            <td>Emax RS2205</td>
+          </tr>
+          <tr>
+            <td>ESCs</td>
+            <td>30A Emax</td>
+          </tr>
+          <tr>
+            <td>Flight Controller</td>
+            <td>CC3D</td>
+          </tr>
+          <tr>
+            <td>Battery</td>
+            <td>Graphene 1300mah 4s</td>
+          </tr>
+          <tr>
+            <td>Props</td>
+            <td>Recommended 5 inch bullnose</td>
+          </tr>
+          <tr>
+            <td>Frame</td>
+            <td>Diatone 250</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div  id="quad-noname" class="quad-container">
+      <div class="spanContent">
+        <h1> Coming soon! </h1>
+    </div>
   </div>
+
+  <script>
+    'use strict'
+
+    var elements = Array.from(document.querySelectorAll('[data-quad]'))
+
+    function deactivateAll () {
+      for (var element of elements) {
+        var id = 'quad-' + element.dataset.quad
+        var box = document.getElementById(id)
+
+        box.classList.remove('active')
+        element.classList.remove('active')
+      }
+    }
+
+    for (var element of elements) {
+      element.addEventListener('click', function (ev) {
+        ev.preventDefault()
+
+        deactivateAll()
+
+        var id = 'quad-' + this.dataset.quad
+        var box = document.getElementById(id)
+
+        box.classList.add('active')
+        this.classList.add('active')
+      })
+    }
+  </script>
+
 </body>

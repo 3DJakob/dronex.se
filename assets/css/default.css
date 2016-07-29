@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+table {
+  font-family: sans-serif;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;

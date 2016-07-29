@@ -1,0 +1,110 @@
+.page_quads p, h1, h2, h3 {
+  color: #000;
+}
+
+div.page_quads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_quads div.slider {
+  display: flex;
+  height: 150px;
+  width: 100vw;
+  background-color: #fff;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.page_quads div.slider div {
+  display: flex;
+  width: 200px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: screen;
+  transition: 0.2s;
+}
+
+.page_quads div.slider div:hover,
+.page_quads div.slider div.active {
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.2s;
+
+}
+
+.page_quads div.slider div.active {
+  width: 250px;
+}
+
+.page_quads div.slider div:nth-child(1) {
+  background-image: url(../img/quads/12a.jpg);
+}
+
+.page_quads div.slider div:nth-child(2) {
+  background-image: url(../img/quads/30a.jpg);
+}
+
+.page_quads div.slider div:nth-child(3) {
+  background-image: url(../img/icons/quad.png);
+  background-color: rgba(230, 230, 230, 1);
+}
+
+.page_quads .quad-container {
+  display: flex;
+  max-width: 960px;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.page_quads .quad-container:not(.active) {
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  transform: translateY(10px);
+}
+
+.page_quads .quad-container.active {
+  opacity: 1;
+  display: flex;
+  transition: 1s;
+}
+
+.page_quads .quad-container .spanContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 960px;
+}
+
+.page_quads h1,
+.page_quads h2,
+.page_quads h3,
+.page_quads p {
+  padding: 0;
+  margin: 10px;
+  text-align: center;
+}
+
+.page_quads div.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page_quads table {
+  margin: 20px;
+}
+
+.page_quads table tr,
+.page_quads table td {
+  padding: 4px;
+  font-size: 10pt;
+}
