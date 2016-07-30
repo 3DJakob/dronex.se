@@ -32,7 +32,7 @@ div.page_quads {
 }
 
 .page_quads div.slider div::after {
-  left: 120px;
+  left: calc(50% - 5px);
   top: 160px;
   content: '';
   width: 0;
