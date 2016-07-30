@@ -31,6 +31,20 @@ div.page_quads {
   transition: 0.2s;
 }
 
+.page_quads div.slider div::after {
+  left: 120px;
+  top: 160px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 10px 5px;
+  border-color: transparent transparent #000000 transparent;
+  position: relative;
+
+  opacity: 0;
+}
+
 .page_quads div.slider div:hover,
 .page_quads div.slider div.active {
   background-color: rgba(255, 255, 255, 0);
@@ -40,6 +54,11 @@ div.page_quads {
 
 .page_quads div.slider div.active {
   width: 250px;
+}
+
+.page_quads div.slider div.active::after {
+  opacity: 1;
+  transition: 1s;
 }
 
 .page_quads div.slider div:nth-child(1) {
